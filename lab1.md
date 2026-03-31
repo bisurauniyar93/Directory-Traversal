@@ -1,4 +1,4 @@
-# Lab: [Lab Name]: LAB 1 [File path traversal,simple case)
+# Lab: [Lab Name]: LAB 1 [ File path traversal,simple case ]
 
 ## Vulnerability Type
 Directory Traversal (Path Traversal)
