@@ -25,5 +25,5 @@ Parameter: ?filename=
 ![WhatsApp Image 2026-03-31 at 08 44 17](https://github.com/user-attachments/assets/7c2b5000-64a3-4170-950b-c0a9857164b7)
 
 
-## Explanation in Words## 🧠 Analysis
+## Explanation in Words## 
 ->  I opened the lab and used Burp Suite to intercept the request. I noticed a parameter `?filename=7.jpg` which controls the file being loaded. First, I confirmed the request was working by checking for a 200 OK response. Then I tried to directly access a sensitive file by changing the value to `/etc/passwd`, but it didn’t work. I realized the application might be restricting direct access, so I tried using path traversal. I started with `../../etc/passwd`, but it was not enough. Then I increased the traversal depth step by step, and finally `../../../../etc/passwd` worked. This allowed me to access sensitive files outside the intended directory.. 
